@@ -1,0 +1,12 @@
+server:
+  port: 8088
+
+rabbitmq:
+  services:
+    - host: docker.nordclan
+      port: 34024
+  username: kama
+  password: kama
+  topic: ariston-topic-exchange
+  queue-to-receive: ariston-queue-to-service
+  routing-key-to-receive: ariston-routing-key-to-service
